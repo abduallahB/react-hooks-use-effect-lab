@@ -23,7 +23,7 @@ function Question({ question, onAnswered }) {
 
     // clean up by using clearInterval() method 
     return function () {
-      clearInterval(timeout);
+      clearTimeout(timeout);
     };
   }, [timeRemaining, onAnswered]);
 
